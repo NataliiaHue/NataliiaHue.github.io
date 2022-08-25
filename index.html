@@ -1,10 +1,77 @@
 <!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+img {
+  border-radius: 50%;
+}
+
+.fa_custom {
+color: 
+#0099CC
+}
+
+</style>
+</head>
 <body>
-<h1>Nataliia Hübler</h1>
-<p>PhD student with the MPI EVA, Leipzig</p>
-<a href="https://www.eva.mpg.de/linguistic-and-cultural-evolution/staff/nataliia-huebler/">
-	MPI website
-</a>
+
+<h2></h2>
+
+<div class="row">
+  <div class="column left" style="background-color:white;">
+	<img src="profile_picture.jpg" alt="my_picture">
+    <h2>Nataliia H&uuml;bler</h2>
+    <p>PhD student <br>
+		<a href="https://www.eva.mpg.de/linguistic-and-cultural-evolution/index/">Max Planck Institute for Evolutionary Anthropology</a>
+		</p>
+  </div>
+  <div class="column right" style="background-color:white;">
+    <h2>About me</h2>
+    <p>I am a PhD student in the Department of Linguistic and Cultural Evolution at the Max Planck Institute for Evolutionary Anthropology in Leipzig (Germany).
+
+My main research topics are:<br>
+
+phylogenetics and computational methods for exploring language history<br>
+diachronic typology<br>
+
+I did my BA in German linguistics at the Kyiv National Linguistic University, Ukraine, and MA in Language and Variation and German linguistics at the University of Kiel, Germany.</p>
+    <h2>Education</h2>
+		<ul class="fa-ul"> 
+			<li><i class="fa fa-graduation-cap fa_custom"></i> PhD in Linguistics, Max Planck Institute for Evolutionary Anthropology</li>
+		  	<li><i class="fa fa-graduation-cap fa_custom"></i> MA in Language and Variation and German linguistics, University of Kiel</li>
+		  	<li><i class="fa fa-graduation-cap fa_custom"></i> BA in German linguistics, Kyiv National Linguistic University</li>
+		</ul>
+  </div>
+</div>
+
 </body>
 </html>
+
