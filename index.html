@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <style>
 * {
@@ -12,7 +12,6 @@
 .column {
   float: left;
   padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
 }
 
 .left {
@@ -39,36 +38,119 @@ color:
 #0099CC
 }
 
+ul.hydro { 
+  list-style-image: url('http://placehold.it/10x10');
+}
+
+ul.hydro dd {
+  margin-bottom: 10px;
+  font-family: 'Open Sans';
+  color: #898989;
+}
+
+.nav {
+  background-color: white; 
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
+
 </style>
 </head>
 <body>
+
+<ul class="nav">
+  <li><a href="#nataliiahue">Nataliia Hübler</a></li>
+  <li><a href="#Projects">Projects</a></li>
+  <li><a href="#Publications">Publications</a></li>
+  <li><a href="#Talks">Talks</a></li>  
+  <li><a href="#Contact">Contact</a></li>
+</ul>
 
 <h2></h2>
 
 <div class="row">
   <div class="column left" style="background-color:white;">
 	<img src="profile_picture.jpg" alt="my_picture">
-    <h2>Nataliia H&uuml;bler</h2>
+    <h2>Nataliia Hübler</h2>
     <p>PhD student <br>
 		<a href="https://www.eva.mpg.de/linguistic-and-cultural-evolution/index/">Max Planck Institute for Evolutionary Anthropology</a>
 		</p>
+	<p><a href="https://orcid.org/my-orcid?orcid=0000-0002-0013-563X"><img src="icons/orcid_id.png" alt="orcid-id" style="width:42px;height:42px;"></a>
+		<a href="https://github.com/NataliiaHue"><img src="icons/github.png" alt="github" style="width:42px;height:42px;"></a>
+		<a href="https://scholar.google.com/citations?user=1kew-7AAAAAJ&hl=en"><img src="icons/google_scholar.png" alt="google-scholar" style="width:42px;height:42px;"></a>
+		<a href="https://www.eva.mpg.de/linguistic-and-cultural-evolution/staff/nataliia-huebler/"><img src="icons/mpg_logo.svg" alt="mpg-website" style="width:42px;height:42px;"></a>
+	</p>
   </div>
   <div class="column right" style="background-color:white;">
     <h2>About me</h2>
     <p>I am a PhD student in the Department of Linguistic and Cultural Evolution at the Max Planck Institute for Evolutionary Anthropology in Leipzig (Germany).
 
-My main research topics are:<br>
-
-phylogenetics and computational methods for exploring language history<br>
-diachronic typology<br>
-
-I did my BA in German linguistics at the Kyiv National Linguistic University, Ukraine, and MA in Language and Variation and German linguistics at the University of Kiel, Germany.</p>
+		<p>My main research topics are:
+			<ul>
+				<li>phylogenetics and computational methods for exploring language history</li>
+				<li>diachronic typology</li>
+				<li>evolution of grammar</li>
+			</ul>
+		</p>
+		<p>I did my BA in German linguistics at the Kyiv National Linguistic University, Ukraine, and MA in Language and Variation and German linguistics at the University of Kiel, Germany.</p>
     <h2>Education</h2>
-		<ul class="fa-ul"> 
-			<li><i class="fa fa-graduation-cap fa_custom"></i> PhD in Linguistics, Max Planck Institute for Evolutionary Anthropology</li>
-		  	<li><i class="fa fa-graduation-cap fa_custom"></i> MA in Language and Variation and German linguistics, University of Kiel</li>
-		  	<li><i class="fa fa-graduation-cap fa_custom"></i> BA in German linguistics, Kyiv National Linguistic University</li>
+		<ul class = "hydro"> 
+			<li><i class="fa fa-graduation-cap fa_custom"></i> PhD in Linguistics</li>
+				<dd>Max Planck Institute for Evolutionary Anthropology</dd>
+		  	<li><i class="fa fa-graduation-cap fa_custom"></i> MA in Language and Variation and German linguistics</li>
+				<dd>University of Kiel</dd>
+		  	<li><i class="fa fa-graduation-cap fa_custom"></i> BA in German linguistics</li>
+				<dd>Kyiv National Linguistic University</dd>
 		</ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column left" style="background-color:B9DFF6;">
+	  <h2>Projects</h2>
+  </div>
+  <div class="column right" style="background-color:B9DFF6;">
+	   <h2>Evolutionary dynamics of structural features</h2>
+	   <ul> 
+		   <li>Stability of structural features</li>
+	   		<form action="https://github.com/NataliiaHue/stability" method="get" target="_blank">
+	           <button id="github-icon" type="submit"><img src="icons/github.png" style="width:10px;height:10px;" alt="gt"> GitHub materials</button>
+	         </form>
+	   	  <li>Admixture in structural features</li>
+	   		<form action="https://github.com/NataliiaHue/admixture" method="get" target="_blank">
+	           <button id="github-icon" type="submit"><img src="icons/github.png" style="width:10px;height:10px;" alt="gt"> GitHub materials</button>
+	         </form>
+		</ul>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column left" style="background-color:B9DFF6;">
+	  <h2>Publications</h2>
+  </div>
+  <div class="column right" style="background-color:B9DFF6;">
+	  <ul> 
+		  <li>Hübler, N. (2022). Phylogenetic signal and rate of evolutionary change in language structures. Royal Society Open Science, 9(3): 211252.
+			<div id="outer">
+			    <div class="inner">
+  	   		<div class="inner"><form action="files/Huebler2022Phylogenetic.pdf" method="get" target="_blank">
+  	           <button id="download-icon" type="submit"><img src="icons/download.png" style="width:10px;height:10px;">PDF</button>
+  	         </form>
+			 <div class="inner"><form action="https://doi.org/10.1098/rsos.211252" method="get" target="_blank">
+   	           <button id="download-icon" type="submit"><img src="icons/link.png" style="width:10px;height:10px;">DOI</button>
+   	         </form>
+			 </div>
+		  <li>Hübler, N. (2020). Typological profile of the Transeurasian languages from a quantitative perspective. In The Oxford guide to the Transeurasian languages (pp. 145-159). Oxford University Press. <img src="icons/download.png" style="width:10px;height:10px;" alt="download"><a href="files/Huebler2020Typological.pdf">pdf</a> <img src="icons/download.png" style="width:10px;height:10px;" alt="download"><a href="https://doi.org/10.1093/oso/9780198804628.003.0012">DOI</a></li>
+		  <li>Neshcheret, N. (2016). Passive construction with intransitive verbs: typology and distribution. Master Thesis, Christian-Albrechts-Universität zu Kiel, Kiel. </li>
+	  </ul>
   </div>
 </div>
 
